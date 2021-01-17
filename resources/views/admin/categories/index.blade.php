@@ -14,7 +14,7 @@
 
     <div class="col-sm-6">
 
-         {!! Form::open(['method'=>'POST','action'=>'AdminCategoriesController@store','files'=>true]) !!}
+         {!! Form::open(['method'=>'POST','action'=>'AdminCategoriesController@store']) !!}
 
                  {{csrf_field()}}
 
