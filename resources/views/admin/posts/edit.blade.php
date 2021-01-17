@@ -4,7 +4,15 @@
 
     <h1>Edit Post</h1>
 
-        {!! Form::open(['method'=>'POST','action'=>'AdminPostsController@store','files'=>true]) !!}
+    <div class="row">
+
+    <div class="col-sm-3">
+        <img src="{{$post->photo->file}}" alt="" class="img-responsive">
+    </div>        
+
+    <div class="col-sm-9">
+        
+        {!! Form::model($post, ['method'=>'PATCH','action'=>['AdminPostsController@update',$post->id],'files'=>true]) !!}
 
         {{csrf_field()}}
 
@@ -15,33 +23,40 @@
 
         <div class="form-group">
             {!! Form::label('category_id','Category') !!}
-            {!! Form::select('category_id',array(''=>'options'),null,['class'=>'form-control']) !!}
+            {!! Form::select('category_id',$categories,null,['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('photo_id','Photo') !!}
-            {!! Form::file('photo_id', null, ['class'=>'form-control']) !!}
+            {!! Form::file('photo_id',['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('body','Description') !!}
-            {!! Form::textarea('body',[''=>'Choose Options']+ $roles,null,['class'=>'form-control']) !!}
+            {!! Form::textarea('body',null,['class'=>'form-control','row'=>8]) !!}
         </div>
 
-        <div class="form-group">
-            {!! Form::label('is_active','Status') !!}
-            {!! Form::select('is_active',array(1=>'Active',0=>'Not Active'),0,['class'=>'form-control']) !!}
-        </div>
 
         <div class="form-group">
-            {!! Form::label('password','Password') !!}
-            {!! Form::password('password', ['class'=>'form-control']) !!}
-        </div>
-
-        <div class="form-group">
-            {!! Form::submit('Create User',['class'=>'btn btn-primary']) !!}
+            {!! Form::submit('Update Post',['class'=>'btn btn-primary col-sm-6']) !!}
         </div>
 
         {!! Form::close() !!}
+
+        {!! Form::open(['method'=>'DELETE','action'=>['AdminPostsController@destroy',$post->id]]) !!}
+
+        <div class="form-group">
+            {!! Form::submit('Delete User',['class'=>'btn btn-danger col-sm-6']) !!}
+        </div>
+
+        {!! Form::close() !!}
+        
+    </div>
+
+    </div>
+
+    <div class="row">
+        @include('includes.form_error')
+    </div>
 
 @endsection
