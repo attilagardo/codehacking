@@ -538,9 +538,9 @@
       }
     },
     "caniuse-db": {
-      "version": "1.0.30001173",
-      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30001173.tgz",
-      "integrity": "sha512-kAuX3BuQEIg9+cmIZYZdVm1XaFsV38iMK3Kp3O23dH4j9cdwknHStyZt5s1I2gQuR6vSsYxnPUGhGEcjk5UhuA=="
+      "version": "1.0.30001178",
+      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30001178.tgz",
+      "integrity": "sha512-+4V4bynISbUtSidUVhlnZxHh076e3EgCIjtoRp4snA4dmKbyJcOGQxPXBBuq6pA6dNvT+JidpDmwerFd8EfHFA=="
     },
     "cardinal": {
       "version": "2.1.1",
@@ -1057,9 +1057,9 @@
       }
     },
     "electron-to-chromium": {
-      "version": "1.3.635",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.635.tgz",
-      "integrity": "sha512-RRriZOLs9CpW6KTLmgBqyUdnY0QNqqWs0HOtuQGGEMizOTNNn1P7sGRBxARnUeLejOsgwjDyRqT3E/CSst02ZQ=="
+      "version": "1.3.642",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.642.tgz",
+      "integrity": "sha512-cev+jOrz/Zm1i+Yh334Hed6lQVOkkemk2wRozfMF4MtTR7pxf3r3L5Rbd7uX1zMcEqVJ7alJBnJL7+JffkC6FQ=="
     },
     "emoji-regex": {
       "version": "8.0.0",
@@ -2705,6 +2705,11 @@
       "version": "0.1.2",
       "resolved": "https://registry.npmjs.org/isstream/-/isstream-0.1.2.tgz",
       "integrity": "sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo="
+    },
+    "jquery": {
+      "version": "3.5.1",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.5.1.tgz",
+      "integrity": "sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg=="
     },
     "js-base64": {
       "version": "2.6.4",
@@ -5425,9 +5430,9 @@
       }
     },
     "uri-js": {
-      "version": "4.4.0",
-      "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.0.tgz",
-      "integrity": "sha512-B0yRTzYdUCCn9n+F4+Gh4yIDtMQcaJsmYBDsTSG8g/OejKBodLQ2IHfN3bM7jUsRXndopT7OIXWdYqc1fjmV6g==",
+      "version": "4.4.1",
+      "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
+      "integrity": "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==",
       "requires": {
         "punycode": "^2.1.0"
       },
